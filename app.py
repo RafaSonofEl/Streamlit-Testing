@@ -1,4 +1,11 @@
+pip install tensorflow
+import streamlit as st
+from PIL import Image, ImageOps
+import numpy as np
+import tensorflow as tf  # Ensure this import is correct
+
 # Load your pre-trained model
+@st.cache_resource  # Cache the model loading so it doesn't reload every time the script runs
 def load_model():
     model = tf.keras.models.load_model('/Users/raphael/Documents/GitHub/skin-cancer-group-2/skin_cancer_classifier_test.h5')
     # Explicitly compile the model
