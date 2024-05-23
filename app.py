@@ -1,8 +1,7 @@
-pip install tensorflow
 import streamlit as st
 from PIL import Image, ImageOps
 import numpy as np
-import tensorflow as tf  # Ensure this import is correct
+import tensorflow as tf
 
 # Load your pre-trained model
 @st.cache_resource  # Cache the model loading so it doesn't reload every time the script runs
